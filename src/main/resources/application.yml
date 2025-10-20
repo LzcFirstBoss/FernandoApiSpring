@@ -1,0 +1,5 @@
+spring:
+  jackson:
+    time-zone: America/Araguaina
+server:
+  port: 8080

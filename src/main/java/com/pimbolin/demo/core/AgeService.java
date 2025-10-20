@@ -11,8 +11,7 @@ import java.time.ZoneId;
 @Service
 public class AgeService {
 
-    private static final ZoneId ZONE = ZoneId.of("America/Araguaina"); // ajuste se quiser
-
+    private static final ZoneId ZONE = ZoneId.of("America/Araguaina");
     public AgeResponse calcular(AgeRequest req) {
         LocalDate nascimento = req.getDataNascimento();
         LocalDate hoje = LocalDate.now(ZONE);

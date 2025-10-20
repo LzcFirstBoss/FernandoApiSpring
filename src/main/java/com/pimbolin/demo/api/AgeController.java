@@ -29,9 +29,7 @@ public class AgeController {
     public AgeResponse calcular(@Valid @RequestBody AgeRequest request) {
         return ageService.calcular(request);
     }
-
-    // GET: query params (facilita testar no navegador)
-    // Ex.: /api/age?nome=Lazaro&sobrenome=Neto&dataNascimento=1999-10-05
+    
     @GetMapping("/age")
     public AgeResponse calcularViaQuery(
             @RequestParam String nome,
